@@ -8,7 +8,9 @@ function App() {
 
   return (
     <>
-      welcome to reacr with tailwind project
+    <div className="text-3xl font-bold underline">
+      welcome to react with tailwind project
+    </div>
     </>
   )
 }
