@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-     <p style={{backgroundColor:'black', color:'white'}}> welcome to java script with tailwid and vite</p>
+      welcome to reacr with tailwind project
     </>
   )
 }
