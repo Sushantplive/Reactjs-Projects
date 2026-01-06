@@ -15,8 +15,8 @@ const UseStateComponent = ({ }) => {
         // setCount(count + 1); //  only increment by 1
         // fixes
         setCount(prev => prev + 1); // increse by 1, res is 1
-        setCount(prev => prev + 1); // 1+1 res is 2
-        setCount(prev => prev + 1); // 2+1 res is 3
+        setCount(prev => prev + 1); // prev values is 1 so, 1+1 res is 2
+        setCount(prev => prev + 1); // prev values is 2 so,2+1 res is 3
     }
 
     const handleDecreament = () => {
