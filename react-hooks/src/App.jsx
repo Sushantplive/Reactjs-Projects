@@ -1,5 +1,6 @@
 import './App.css'
-import FetchUserTiny from './hooks/Component/FetchUserTiny'
+import AbortControllerDemo from './hooks/Component/AbortControllerDemo'
+// import FetchUserTiny from './hooks/Component/FetchUserTiny'
 // import CleanUp from './hooks/Component/CleanUp'
 // import FetchUserDemo from './hooks/Component/FetchUser'
 // import UseEffectComponent from './hooks/UseEffectComponent'
@@ -15,7 +16,8 @@ function App() {
       {/* <CleanUp/> */}
       {/* <FetchUserDemo/> */}
       {/* <FetchUserSimple/> */}
-      <FetchUserTiny/>
+      {/* <FetchUserTiny/> */}
+      <AbortControllerDemo/>
     </div>
   )
 }
