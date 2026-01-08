@@ -29,6 +29,7 @@ const VideoPlayer = ({src, isPlaying}) => {
     },[isPlaying]) 
     // so in app component input state got change but because  isPlaying state not chnage so this effect will not run,
     // other wise it will run every state change
+    // react will compair depedency value by comparing it previous value while rendering with help of Object.is comparison
 
 
     return (

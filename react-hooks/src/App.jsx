@@ -1,5 +1,6 @@
 import './App.css'
-import UseEffectComponent from './hooks/UseEffectComponent'
+import CleanUp from './hooks/Component/CleanUp'
+// import UseEffectComponent from './hooks/UseEffectComponent'
 // import UseStateComponent from './hooks/UseStateComponent'
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
       <h2>Welcome to Reactjs Hooks</h2>
       <hr/>
       {/* <UseStateComponent /> */}
-      <UseEffectComponent/>
+      {/* <UseEffectComponent/> */}
+      <CleanUp/>
     </div>
   )
 }
