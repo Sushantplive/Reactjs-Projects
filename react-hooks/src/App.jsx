@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import UseStateComponent from './hooks/UseStateComponent'
 
