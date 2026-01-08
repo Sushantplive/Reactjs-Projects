@@ -1,5 +1,7 @@
 import './App.css'
-import CleanUp from './hooks/Component/CleanUp'
+import FetchUserTiny from './hooks/Component/FetchUserTiny'
+// import CleanUp from './hooks/Component/CleanUp'
+// import FetchUserDemo from './hooks/Component/FetchUser'
 // import UseEffectComponent from './hooks/UseEffectComponent'
 // import UseStateComponent from './hooks/UseStateComponent'
 
@@ -10,7 +12,10 @@ function App() {
       <hr/>
       {/* <UseStateComponent /> */}
       {/* <UseEffectComponent/> */}
-      <CleanUp/>
+      {/* <CleanUp/> */}
+      {/* <FetchUserDemo/> */}
+      {/* <FetchUserSimple/> */}
+      <FetchUserTiny/>
     </div>
   )
 }
