@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 const UseStateComponent = ({ }) => {
+    console.log('this is useState demo');
     const [count, setCount] = useState(0)
 
     const handleIncreament = () => {
