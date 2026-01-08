@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import UseStateComponent from './hooks/UseEffectHooks'
+import UseStateComponent from './hooks/UseStateComponent'
 
 function App() {
   return (
