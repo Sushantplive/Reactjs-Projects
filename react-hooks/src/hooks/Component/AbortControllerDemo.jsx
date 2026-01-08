@@ -9,7 +9,10 @@ const AbortControllerDemo = () => {
 
     useEffect(() => {
 
-        if (!userId || userId < 1) return; // guard applied
+        if (!userId || userId < 1){
+            setUser('');
+            return
+        } // guard applied
         // now I want to call api with dynamic userId that to asyanc await way
         const controller = new AbortController();
         
@@ -18,12 +21,14 @@ const AbortControllerDemo = () => {
             try {
                 const res = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}`,
                     { signal: controller.signal });
+                    if (!res.ok) throw new Error('Network response was not ok');
                 const data = await res.json();
                 console.log(data)
                 setUser(data.name)
             } catch (err) {
                 console.log('error');
-                setUser(null)
+                if (err.name !== 'AbortError') console.error(err);
+                setUser('')
             }
 
         }
